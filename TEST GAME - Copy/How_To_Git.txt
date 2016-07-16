@@ -1,0 +1,40 @@
+1. Browse to the game project folder (has the .project file in it)
+
+2. Right click a blank place within the folder and select "git BASH"
+
+3. Type "git init"
+
+4. Type "git add ."
+
+5. Type "git commit -m "Tea initial commit""
+
+6. Type "git clone https://github.com/BiscuitMinx/FeatherTea.git"
+
+7. Type "git remote add https://github.com/BiscuitMinx/FeatherTea.git"
+
+Done
+
+
+Whenever you are done messing with the project, do this:
+
+1. Browse to the game project folder.
+
+2. Right click a blank place within the folder and select "git BASH"
+
+3. Type "git status"
+	
+	If it it tells you there is no git started, type "git init"
+
+	If it tells you a bunch of info, move on to step 4.
+
+4. Type "git add ."
+
+5. Type "git commit -m "COMMENT""
+
+6. Type "git pull origin <master>"
+
+	You can swap "master" for whatever branch you are working on.
+
+7. Type "git push origin <master>"
+
+	You can swap "master" for whatever branch you are working on.
