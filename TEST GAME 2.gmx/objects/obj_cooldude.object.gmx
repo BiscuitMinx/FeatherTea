@@ -26,27 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>///Destroy bullets outside room
-<<<<<<< HEAD
 
 if x &lt; 0 or y &lt; 0 or x &gt; room_width or y &gt; room_height {instance_destroy()}
-=======
-if x &lt; 0 or y &lt; 0 or x &gt; room_width or y &gt; room_height {
-
-instance_destroy()
-
-}
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
 
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-<<<<<<< HEAD
     <event eventtype="4" ename="enemies">
-=======
-    <event eventtype="4" ename="obj_brute">
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -63,13 +51,9 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>///Destroy self
 instance_destroy();
 </string>
-=======
-            <string></string>
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
           </argument>
         </arguments>
       </action>

@@ -31,6 +31,7 @@
 rotated = false;
 hp = 1;
 dam = 1;
+spd = 1;
 
 state = scr_enemy_move_state;
 </string>

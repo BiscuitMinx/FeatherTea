@@ -27,8 +27,10 @@
             <kind>1</kind>
             <string>///Create stfff
 event_inherited();
+hp = 1;
+spd = 3;
+dam = 1;
 
-speed = 3;
 image_speed = .3;
 facing = 1;
 

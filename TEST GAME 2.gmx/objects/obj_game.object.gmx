@@ -29,13 +29,15 @@
 //Enemy Spawning
 SecondsBetweenEnemySpawns = 2;
 SecondsSinceLastEnemySpawn = 0;
+
 SecondsBetweenBruteSpawns = 8;
 SecondsSinceLastBruteSpawn = 2;
+
 SecondsBetweenRacerSpawns = 5;
 SecondsSinceLastRacerSpawn = 1;
 
-
-
+rm_spd = (room_speed * 2);
+minRange = 100;
 
 //Get resolution
 width = display_get_width();
@@ -81,36 +83,28 @@ x += (obj_GANGSTEREARTH.x - x) * .3;
 y += (obj_GANGSTEREARTH.y - y) * .3;
 
 ///Spawn Enemies
-SecondsSinceLastEnemySpawn = SecondsSinceLastEnemySpawn + 2/room_speed;
-SecondsSinceLastBruteSpawn = SecondsSinceLastBruteSpawn + .5/room_speed;
-SecondsSinceLastRacerSpawn = SecondsSinceLastRacerSpawn + .8/room_speed;
+SecondsSinceLastEnemySpawn = SecondsSinceLastEnemySpawn + 2 / room_speed;
+SecondsSinceLastBruteSpawn = SecondsSinceLastBruteSpawn + .5 / room_speed;
+SecondsSinceLastRacerSpawn = SecondsSinceLastRacerSpawn + .8 / room_speed;
+
 if SecondsSinceLastEnemySpawn &gt;= SecondsBetweenEnemySpawns {
     //Spawn Enemy
-    instance_create(random(room_width), random(room_height), obj_enemy);     
-    SecondsSinceLastEnemySpawn = 0
+    instance_create(random(room_width) + minRange, random(room_height) + minRange, obj_enemy);     
+    SecondsSinceLastEnemySpawn += (room_speed / rm_spd);
 }
 
 if SecondsSinceLastBruteSpawn &gt;= SecondsBetweenBruteSpawns {
     //Spawn Enemy
-    instance_create(random(room_width), random(room_height), obj_brute);    
-    SecondsSinceLastBruteSpawn = 2
+    instance_create(random(room_width) + minRange, random(room_height) + minRange, obj_brute);    
+    SecondsSinceLastBruteSpawn += (room_speed / rm_spd);
 }
 
 if SecondsSinceLastRacerSpawn &gt;= SecondsBetweenRacerSpawns {
     //Spawn Enemy
     instance_create(384, 480, obj_racer)
     instance_create(1696, 480, obj_racer)
-    SecondsSinceLastRacerSpawn = 1;
+    SecondsSinceLastRacerSpawn += (room_speed / rm_spd);
 }
-
-
-
-
-
-
-
-
-
 </string>
           </argument>
         </arguments>

@@ -8,13 +8,7 @@ if (image_angle > 90 && image_angle < 270 && !rotated){
    rotated = true;
 }
 
-
 image_speed = 5;
 
-/*
-if (hspeed > 0) {facing = 1;
-}else if (hspeed < 0) {facing = -1;}
-*/
-
 //Move towards eARTH
-move_towards_point(obj_GANGSTEREARTH.x, obj_GANGSTEREARTH.y, speed);
+move_towards_point(obj_GANGSTEREARTH.x, obj_GANGSTEREARTH.y, spd);
