@@ -46,6 +46,8 @@
     <script>scripts\scr_earth_fire.gml</script>
     <script>scripts\scr_enemy_move_state.gml</script>
     <script>scripts\scr_hotkeys.gml</script>
+    <script>scripts\scr_enemy_spawn.gml</script>
+    <script>scripts\scr_enemy_stats.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>

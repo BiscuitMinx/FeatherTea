@@ -83,27 +83,27 @@ x += (obj_GANGSTEREARTH.x - x) * .3;
 y += (obj_GANGSTEREARTH.y - y) * .3;
 
 ///Spawn Enemies
-SecondsSinceLastEnemySpawn = SecondsSinceLastEnemySpawn + 2 / room_speed;
-SecondsSinceLastBruteSpawn = SecondsSinceLastBruteSpawn + .5 / room_speed;
-SecondsSinceLastRacerSpawn = SecondsSinceLastRacerSpawn + .8 / room_speed;
+SecondsSinceLastEnemySpawn += 1 / room_speed;
+SecondsSinceLastBruteSpawn += 1 / room_speed;
+SecondsSinceLastRacerSpawn += 1 / room_speed;
 
 if SecondsSinceLastEnemySpawn &gt;= SecondsBetweenEnemySpawns {
     //Spawn Enemy
-    instance_create(random(room_width) + minRange, random(room_height) + minRange, obj_enemy);     
-    SecondsSinceLastEnemySpawn += (room_speed / rm_spd);
+    instance_create(random(room_width), random(room_height), obj_enemy);
+    SecondsSinceLastEnemySpawn = 0;
 }
 
 if SecondsSinceLastBruteSpawn &gt;= SecondsBetweenBruteSpawns {
     //Spawn Enemy
-    instance_create(random(room_width) + minRange, random(room_height) + minRange, obj_brute);    
-    SecondsSinceLastBruteSpawn += (room_speed / rm_spd);
+    instance_create(random(room_width), random(room_height), obj_brute);
+    SecondsSinceLastBruteSpawn = 0;
 }
 
 if SecondsSinceLastRacerSpawn &gt;= SecondsBetweenRacerSpawns {
     //Spawn Enemy
     instance_create(384, 480, obj_racer)
     instance_create(1696, 480, obj_racer)
-    SecondsSinceLastRacerSpawn += (room_speed / rm_spd);
+    SecondsSinceLastRacerSpawn = 0;
 }
 </string>
           </argument>

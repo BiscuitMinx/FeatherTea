@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Create stfff
 event_inherited();
-hp = 3;
+hp = 6;
 dam = 2;
 spd = 1;
 

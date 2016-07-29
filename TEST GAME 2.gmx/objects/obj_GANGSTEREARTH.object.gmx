@@ -28,6 +28,24 @@
             <string>///Set variables
 hp = 6;
 dam = 1;
+spawnSpeed = 1;
+
+SecondsSinceLastEnemySpawn = 0;
+
+//Get resolution
+width = display_get_width();
+height = display_get_height();
+
+//Adjust view
+view_wview = width/1.1;
+view_hview = height/1.1;
+
+//Adjust port
+view_wport = width;
+view_hport = height;
+
+//Adjust Surface
+surface_resize(application_surface, width, height);
 </string>
           </argument>
         </arguments>
@@ -54,8 +72,12 @@ dam = 1;
 scr_earth_move();
 scr_earth_fire();
 
+/*
 //Summon enemies
 enemy = instance_place(x, y, obj_enemy or obj_racer or obj_brute);
+*/
+
+//scr_enemy_spawn();
 
 if (hp &lt;= 0) {
 instance_destroy(); 
@@ -71,10 +93,10 @@ audio_play_sound(sound_creds, 10, true);
       </action>
     </event>
   </events>
-  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
-  <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
+  <PhysicsObjectShape>2</PhysicsObjectShape>
+  <PhysicsObjectDensity>0</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
   <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
@@ -82,5 +104,14 @@ audio_play_sound(sound_creds, 10, true);
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>24,12</point>
+    <point>36,16</point>
+    <point>44,32</point>
+    <point>36,48</point>
+    <point>16,52</point>
+    <point>4,44</point>
+    <point>0,28</point>
+    <point>8,16</point>
+  </PhysicsShapePoints>
 </object>

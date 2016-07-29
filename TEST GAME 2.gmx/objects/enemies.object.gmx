@@ -32,6 +32,8 @@ rotated = false;
 hp = 1;
 dam = 1;
 spd = 1;
+spawnRate = 1;
+minRange = 100;
 
 state = scr_enemy_move_state;
 </string>
