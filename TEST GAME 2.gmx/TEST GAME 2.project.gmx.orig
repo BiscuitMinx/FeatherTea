@@ -13,11 +13,27 @@
     <sound>sound\sound_select</sound>
     <sound>sound\sound_creds</sound>
     <sound>sound\wow</sound>
+<<<<<<< HEAD
+    <sound>sound\sound_hurt</sound>
+    <sound>sound\sound_gameover</sound>
+    <sound>sound\sound_earthhurt</sound>
+    <sound>sound\titlepulse</sound>
+=======
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
   </sounds>
   <sprites name="sprites">
     <sprites name="PLAYER">
       <sprite>sprites\spr_earth</sprite>
       <sprite>sprites\spr_GANGSTEREARTH</sprite>
+<<<<<<< HEAD
+      <sprite>sprites\spr_damage1</sprite>
+      <sprite>sprites\spr_damage2</sprite>
+      <sprite>sprites\spr_damage3</sprite>
+      <sprite>sprites\spr_damage4</sprite>
+      <sprite>sprites\spr_damage5</sprite>
+      <sprite>sprites\spr_damage6</sprite>
+=======
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
       <sprite>sprites\spr_cooldude</sprite>
     </sprites>
     <sprites name="MENU">
@@ -26,7 +42,14 @@
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_feathertea</sprite>
       <sprite>sprites\spr_us</sprite>
+<<<<<<< HEAD
+      <sprite>sprites\spr_gameover</sprite>
       <sprite>sprites\spr_cool</sprite>
+      <sprite>sprites\spr_pressescape</sprite>
+      <sprite>sprites\spr_backtomenu</sprite>
+=======
+      <sprite>sprites\spr_cool</sprite>
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
     </sprites>
     <sprites name="ENEMIES">
       <sprite>sprites\spr_enemy</sprite>
@@ -36,39 +59,64 @@
         <sprite>sprites\spr_brute_damaged</sprite>
       </sprites>
     </sprites>
+<<<<<<< HEAD
+    <sprites name="Cutscene thing">
+      <sprite>sprites\COLONIZE</sprite>
+      <sprite>sprites\PRESSENTER</sprite>
+    </sprites>
+    <sprite>sprites\COLONIZETHIS</sprite>
+=======
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
   </sprites>
   <backgrounds name="background">
     <background>background\bg_1</background>
   </backgrounds>
   <paths name="paths"/>
-<<<<<<< HEAD
   <scripts name="scripts">
     <script>scripts\scr_earth_move.gml</script>
     <script>scripts\scr_earth_fire.gml</script>
     <script>scripts\scr_enemy_move_state.gml</script>
     <script>scripts\scr_hotkeys.gml</script>
-  </scripts>
+<<<<<<< HEAD
+    <script>scripts\scr_enemy_spawn.gml</script>
+    <script>scripts\scr_enemy_stats.gml</script>
 =======
-  <scripts name="scripts"/>
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
     <font>fonts\f_normal</font>
     <font>fonts\f_other</font>
+<<<<<<< HEAD
+    <font>fonts\font3</font>
+=======
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
   </fonts>
   <objects name="objects">
     <objects name="PLAYER">
       <object>objects\obj_earth</object>
       <object>objects\obj_GANGSTEREARTH</object>
+<<<<<<< HEAD
+      <object>objects\obj_earthdeath</object>
+=======
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
       <object>objects\obj_cooldude</object>
     </objects>
     <objects name="GAME">
       <object>objects\obj_game</object>
       <object>objects\obj_view_creds</object>
+<<<<<<< HEAD
+      <object>objects\obj_viewgameover</object>
+      <object>objects\obj_view_room1</object>
+      <object>objects\secrebuttfun</object>
+      <object>objects\obj_view_menu</object>
+      <object>objects\obj_score</object>
+=======
       <object>objects\obj_view_room1</object>
       <object>objects\obj_view_menu</object>
       <object>objects\musicbox</object>
       <object>objects\secrebuttfun</object>
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
     </objects>
     <objects name="MENU">
       <object>objects\obj_creds</object>
@@ -78,25 +126,43 @@
       <object>objects\obj_playmenu</object>
       <object>objects\obj_cool</object>
       <object>objects\object20</object>
+<<<<<<< HEAD
+      <object>objects\obj_gameover</object>
+      <object>objects\obj_pressescape</object>
+      <object>objects\obj_backtomenu</object>
+=======
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
     </objects>
     <objects name="ENEMIES">
       <object>objects\obj_brute</object>
       <object>objects\obj_enemy</object>
       <object>objects\obj_racer</object>
     </objects>
-<<<<<<< HEAD
     <objects name="parents">
       <object>objects\enemies</object>
     </objects>
-=======
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
+<<<<<<< HEAD
+    <objects name="Cutscene thing">
+      <object>objects\obj_COLONIZE</object>
+      <object>objects\obj_PRESSENTER</object>
+    </objects>
+    <object>objects\TITLESCREEN</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\TITLE</room>
+=======
+  </objects>
+  <rooms name="rooms">
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
     <room>rooms\room_menu</room>
     <room>rooms\room_creds</room>
     <room>rooms\room_beginning</room>
     <room>rooms\room_battle</room>
     <room>rooms\room_secretbuttfun</room>
+<<<<<<< HEAD
+    <room>rooms\room_gameover</room>
+=======
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

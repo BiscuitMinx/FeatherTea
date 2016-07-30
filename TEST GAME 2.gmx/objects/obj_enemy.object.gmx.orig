@@ -5,11 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-<<<<<<< HEAD
   <parentName>enemies</parentName>
-=======
-  <parentName>&lt;undefined&gt;</parentName>
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -30,21 +26,21 @@
           <argument>
             <kind>1</kind>
             <string>///Create stfff
-<<<<<<< HEAD
 event_inherited();
+<<<<<<< HEAD
+hp = 2;
+spd = 2;
+dam = 1;
+spawnRate = 1;
+
+=======
 
 speed = 3;
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
 image_speed = .3;
 facing = 1;
 
 sprite_index = spr_enemy;
-=======
-
-speed = 3;
-image_speed = 20;
-facing=1;
-
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
 </string>
           </argument>
         </arguments>
@@ -68,63 +64,7 @@ facing=1;
           <argument>
             <kind>1</kind>
             <string>///Facing
-<<<<<<< HEAD
 event_inherited();
-=======
-if hspeed&gt;0 {facing=1;}
-else if hspeed&lt;0 {facing=-1;}
-image_angle = point_direction(x, y, obj_GANGSTEREARTH.x, obj_GANGSTEREARTH.y);
-
-//Move towards eARTH
-move_towards_point(obj_GANGSTEREARTH.x, obj_GANGSTEREARTH.y, speed);
-
-//Damage 
-incomingbullet = instance_place(x, y, obj_cooldude);
-if instance_exists(incomingbullet) {
-    
-    instance_destroy()
-    
-    
-    with (incomingbullet) {
-    
-        instance_destroy()
-        }
-        
-        
-}
-
-
-
-
-
-
-
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_sprite_ext(spr_enemy,-1,x,y,facing,1,0,c_white,1);
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
 </string>
           </argument>
         </arguments>

@@ -25,7 +25,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>///Moves you from rooms
 scr_hotkeys();
 
@@ -39,12 +38,11 @@ room_goto(room_menu);
 audio_stop_all();
 audio_play_sound(sound_menu, 10, true);
 }
+<<<<<<< HEAD
 =======
-            <string>///Earth heals herself.
-
->>>>>>> 00a3ac9eb17b15cffb745d97b2de55854d5289f7
 
 
+>>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
 </string>
           </argument>
         </arguments>
