@@ -28,7 +28,7 @@
             <string>///Create stfff
 event_inherited();
 
-spd = 3.5;
+speed = 6;
 image_speed = .3;
 facing = 1;
 

@@ -28,7 +28,6 @@
             <string>///Create stfff
 event_inherited();
 hp = 2;
-spd = 2;
 dam = 1;
 spawnRate = 1;
 

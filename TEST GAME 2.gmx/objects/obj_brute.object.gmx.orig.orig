@@ -29,8 +29,12 @@
 event_inherited();
 hp = 6;
 dam = 2;
+<<<<<<< HEAD
+spd = 0.5;
+=======
+spd = 1;
+>>>>>>> 4d17e79f02c480fd1a5ca1fccb06bc643c1cc2b3
 
-speed = 1;
 image_speed = .2;
 facing = 1;
 sprite_index = spr_brute;

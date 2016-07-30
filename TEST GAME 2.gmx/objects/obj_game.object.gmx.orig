@@ -29,7 +29,6 @@
 //Enemy Spawning
 SecondsBetweenEnemySpawns = 2;
 SecondsSinceLastEnemySpawn = 0;
-<<<<<<< HEAD
 
 SecondsBetweenBruteSpawns = 8;
 SecondsSinceLastBruteSpawn = 2;
@@ -39,15 +38,6 @@ SecondsSinceLastRacerSpawn = 1;
 
 rm_spd = (room_speed * 2);
 minRange = 100;
-=======
-SecondsBetweenBruteSpawns = 8;
-SecondsSinceLastBruteSpawn = 2;
-SecondsBetweenRacerSpawns = 5;
-SecondsSinceLastRacerSpawn = 1;
-
-
-
->>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
 
 //Get resolution
 width = display_get_width();
@@ -93,7 +83,6 @@ x += (obj_GANGSTEREARTH.x - x) * .3;
 y += (obj_GANGSTEREARTH.y - y) * .3;
 
 ///Spawn Enemies
-<<<<<<< HEAD
 SecondsSinceLastEnemySpawn += 1 / room_speed;
 SecondsSinceLastBruteSpawn += 1 / room_speed;
 SecondsSinceLastRacerSpawn += 1 / room_speed;
@@ -102,50 +91,27 @@ if SecondsSinceLastEnemySpawn &gt;= SecondsBetweenEnemySpawns {
     //Spawn Enemy
     instance_create(random(room_width), random(room_height), obj_enemy);
     SecondsSinceLastEnemySpawn = 0;
-=======
-SecondsSinceLastEnemySpawn = SecondsSinceLastEnemySpawn + 2/room_speed;
-SecondsSinceLastBruteSpawn = SecondsSinceLastBruteSpawn + .5/room_speed;
-SecondsSinceLastRacerSpawn = SecondsSinceLastRacerSpawn + .8/room_speed;
-if SecondsSinceLastEnemySpawn &gt;= SecondsBetweenEnemySpawns {
-    //Spawn Enemy
-    instance_create(random(room_width), random(room_height), obj_enemy);     
-    SecondsSinceLastEnemySpawn = 0
->>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
 }
 
 if SecondsSinceLastBruteSpawn &gt;= SecondsBetweenBruteSpawns {
     //Spawn Enemy
-<<<<<<< HEAD
     instance_create(random(room_width), random(room_height), obj_brute);
     SecondsSinceLastBruteSpawn = 0;
-=======
-    instance_create(random(room_width), random(room_height), obj_brute);    
-    SecondsSinceLastBruteSpawn = 2
->>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
 }
 
 if SecondsSinceLastRacerSpawn &gt;= SecondsBetweenRacerSpawns {
     //Spawn Enemy
     instance_create(384, 480, obj_racer)
     instance_create(1696, 480, obj_racer)
-<<<<<<< HEAD
     SecondsSinceLastRacerSpawn = 0;
-=======
-    SecondsSinceLastRacerSpawn = 1;
->>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
 }
-
-
-
-
 <<<<<<< HEAD
+
+
+
+
 =======
-
-
-
-
-
->>>>>>> 0ea3b30337539cfd73c791de9d9c9e6f5e9c3881
+>>>>>>> 4d17e79f02c480fd1a5ca1fccb06bc643c1cc2b3
 </string>
           </argument>
         </arguments>
